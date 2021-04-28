@@ -1,0 +1,31 @@
+header, h1 {
+  background: #6495ed;
+  text-align: right;
+  text-decoration: none;
+  color: #FAEBD7;
+  border: 
+}
+
+body {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+main {
+  background: white;
+  padding: 100px;
+  border:  20px solid #faebd7;
+  margin: none;
+}
+
+ul {
+  color: black;
+  list-style-type: none;
+}
+
+"#" {
+  text-align: right;
+  text-decoration: none;
+  color: #FAEBD7;
+  border: 
+}

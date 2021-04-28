@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    font-family: Helvetica;
+    background-color: #798df2;
+}
+
+img{
+    width: 100%;
+}
+
+figure{
+    width: 50%;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: 'Lora', serif;
+    margin: 2em 1em 2em 2em;
+    text-align: right;
+}
+
+h1 a{
+    color: #f9f1e1;
+}
+
+
+section h2{
+    margin: 2em 0 2em 0;
+}
+
+.post-content h2 a{
+    font-family: 'Lora', serif;
+    color: black;
+    margin: 2em;
+}
+
+header{
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-color: #798df2;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 2em;
+    text-align: right;
+}
+
+hr{
+    margin: 2em;
+    height: 1px;
+    background-color: #f9f1e1;
+    text-align: right;
+}
+
+li a{
+    color: #FAEBD7;
+    font-weight: bold;
+}
+
+a.link:hover {
+   color: white;
+   text-decoration: underline;
+}
+
+a.link:active {
+    color: #DEB887;
+ }
+
+li{
+    margin: 1em 0 1em  0;
+}
+
+main{
+    width: 80%;
+    background-color: #f9f1e1;
+    float: right;
+    padding: 4em 0 0 0;
+}
+
+.wrapper{
+    width: 50%;
+    margin: 0 auto;
+}
+
+article{
+    margin: 0 0 2em 0;
+    background-color: white;
+    text-align: center;
+    padding: 2em;
+    box-shadow: 3px 3px #d8d8d7;
+}
+
+a.link3:hover{
+    text-decoration: underline;
+}
+
+section a{
+    color:#798df2;
+}
+
+a.link2:hover{
+    text-decoration: underline;
+}
+
+.post-date{
+    color:#8a8a8a;
+    font-weight: bold;
+}
+
+
+@media (max-width: 1300px)  {
+    header{
+        width: 25%;
+    }
+
+    main{
+        width: 75%;
+    }
+
+    .wrapper{
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 900px)  {
+    header{
+        width: 35%;
+    }
+
+    main{
+        width: 65%;
+    }
+
+    .wrapper{
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px)  {
+    body{
+        background-color: #f9f1e1;
+    }
+    
+    header{
+        width: 100%;
+        float: none;
+    }
+
+    main{
+        width: 100%;
+        float: none;
+        padding: 0 0 2em 0;    
+    }
+
+    .wrapper{
+        width: 95%;
+    }
+
+    h1{
+        margin: 0;
+        padding: 2em 1em 2em 0;
+    }
+
+    ul{
+        padding: 0 0 2em 0;
+    }
+
+}

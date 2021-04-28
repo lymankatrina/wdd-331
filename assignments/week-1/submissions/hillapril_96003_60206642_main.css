@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+main {
+    background-color: #FAEBD7;
+    padding-left: 20px;
+    top: 0;
+    margin-left: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main a {
+    text-decoration: none;
+    color: #6495ED;
+}
+main a:active{
+    color: #DEB887;
+}
+main a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #6495ED;
+    color: #FAEBD7;
+    width: 260px;
+    margin: auto;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    text-align: right;
+    text-decoration: none;
+}
+
+header h1 a {
+    text-decoration: none;
+    padding: 20px 30px 0px 30px;
+    display: block;
+    color: #FAEBD7;
+}
+
+header hr {
+    margin: 0px 30px 0px 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px 30px 0px 30px;
+}
+
+nav ul li a {
+    color: #FAEBD7;
+    text-decoration: none;
+}
+
+nav ul li a:active {
+    color: #DEB887;
+}
+
+nav ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+}
+
+article {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 16px 0 rgba(0, 0, 0, 0.19);
+    background-color: #f1f1f1;
+    max-height: 800px;
+    border-radius: 1px;
+    text-align: left;
+    overflow: hidden;
+    padding: 20px;
+    margin: 20px;
+    max-width: 400px;
+}
+
+.post-date {
+    color: gray;
+}
+
+.post-content h2 a {
+    color: black;
+    text-decoration: none;;
+}
+.post-content h2 a:active{
+    color: #DEB887;
+}
+.post-content h2 a:hover {
+    color: #6495ED;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        width: 100%;
+        height: auto;
+        max-height: auto;
+        position: relative;
+    }
+    header h1 a {
+        padding: 40px 30px 0px 30px;
+    }
+    nav ul {
+        padding: 10px 30px 30px 30px;
+        margin: 0;
+    }
+    nav ul li {
+        padding: 10px;
+    }
+    main {
+        margin-left: 0;
+        padding: 10px 10px 10px 10px;
+    }
+    article {
+        padding: 20px;
+        max-width: 560px;
+        max-height: auto;
+        height: auto;
+        width: auto;
+    }
+    .post-date {
+        width: 100%;
+    }
+}
+
+  /*The font for the headlines is Lora and can be found on Google fonts
+  The font list for the body copy is: Helvetica, Arial, sans-serif
+  The blue color is #6495ED.
+  The background color used for <main> and the color of the text on the blue sidebar is #FAEBD7
+  Navigation links should behave thus: normal and visited: #FAEBD7 and no underline , active: #DEB887, hover: white and underlined
+  Other page links should behave thus: normal and visited: #6495ED and no underline , active: #DEB887, hover: underlined
+  Article title links should behave thus: normal and visited: black and no underline , active: #DEB887, hover: #6495ED and underlined
+  */

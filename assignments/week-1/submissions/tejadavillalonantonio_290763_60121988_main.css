@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+h1, h2 {
+    font-family: 'Lora', serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6495ED;
+    text-align: right;
+    margin: 0;
+    padding: 2rem;
+}
+
+header h1 a:link{
+    color:#faebd7;
+    text-decoration: none;
+}
+
+header h1 a:visited{
+    color:#faebd7;
+    text-decoration: none;
+}
+
+header h1 a:hover{
+    text-decoration: underline;
+}
+
+header h1 a:active{
+    color: #deb887;
+}
+
+nav ul li{
+    list-style: none;
+    margin-top: .5rem;
+}
+
+header nav ul li a:link{
+    color: #faebd7;
+    text-decoration: none;
+}
+
+header nav ul li a:visited{
+    color: #faebd7;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+header nav ul li a:active{
+    color: #deb887;
+}
+
+main {
+    background-color: #faebd7;
+    padding: .1rem 1rem 1rem 1rem;
+}
+
+figure img{
+    width: 100%;
+}
+
+article{
+    background-color: white;
+    margin: 2rem 0 2rem 0;
+    padding: 2rem;
+    box-shadow: 0px 0px 5px black;
+}
+
+article h2 a:link{
+    color: black;
+    text-decoration: none;
+}
+
+article h2 a:visited{
+    color:black;
+    text-decoration: none;
+}
+
+article h2 a:hover{
+    color: #6495ed;
+    text-decoration: underline;
+}
+
+article h2 a:active{
+    color: #deb887;
+}
+
+article p a:link{
+    color: #6495ED;
+    text-decoration: none;
+}
+
+article p a:visited{
+    color:#6495ED;
+    text-decoration: none;
+}
+
+article p a:hover{
+    color: #6495ed;
+    text-decoration: underline;
+}
+
+article p a:active{
+    color: #deb887;
+}
+
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+    /*body div{
+        display: flex;
+    }
+
+    main{
+        padding: 1rem 4rem 2rem 4rem;
+    }
+    article {
+        text-align: center;
+    }
+
+    figure img{
+        width: 30%;
+        margin: 2rem 0 0 0;
+    }*/
+
+    /*Creating two part using Grid*/
+
+    div{
+        display: grid;
+        grid-template-areas: "head main";
+    }
+
+    div>header{
+        grid-area: head;
+    }
+
+    div>main{
+        grid-area: main;
+    }
+
+    main{
+        padding: 1rem 4rem 2rem 4rem;
+    }
+    article {
+        text-align: center;
+    }
+
+    figure img{
+        width: 30%;
+        margin: 2rem 0 0 0;
+    }
+} /*end large */

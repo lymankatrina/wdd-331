@@ -1,0 +1,41 @@
+header, h1 {
+  background: #6495ed;
+  text-align: right;
+  text-decoration: none;
+  color: #FAEBD7;
+  
+}
+
+body {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+div {
+  column-count: 2;
+  margin: none;
+}
+column1 {
+  height: 50px
+}
+column2 {
+  height: 300px;
+}
+  main {
+  background: white;
+  padding: 5px;
+  border:  10px solid #faebd7;
+  margin: none;
+}
+
+ul {
+  color: black;
+  list-style-type: none;
+  height: 1350px;
+}
+"#" {
+  text-align: right;
+  text-decoration: none;
+  color: #FAEBD7;
+  border: 
+}

@@ -1,0 +1,142 @@
+/* Headers font import */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+:root {
+    --nav-bg: #6495ED;
+    --main-bg: #FAEBD7;
+    --article-bg: #ffffff;
+    --nav-title-color: #FAEBD7;
+    --nav-link-color: #FAEBD7;
+    --nav-link-active: #DEB887;
+    --nav-link-hover: #ffffff;
+    --link-color: #6495ED;
+    --link-active: #DEB887;
+    --article-link-color: #000000;
+    --article-link-active: #DEB887;
+    --article-link-hover: #6495ED;
+    --date-color: #777777;
+}
+
+header {
+    background-color: var(--nav-bg);
+    padding: 2em;
+    text-align: right;
+}
+
+header hr {
+    margin: 20px 0px;
+}
+
+header h1 a {
+    color: var(--nav-title-color);
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+header nav ul li {
+    padding: 5px;
+}
+
+header nav ul li a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+
+header nav ul li a:active {
+    color: var(--nav-link-active)
+}
+
+header nav ul li a:hover {
+    color: var(--nav-link-hover);
+    text-decoration: underline;
+}
+
+main {
+    background-color: var(--main-bg);
+    padding: 20px;
+}
+
+main article {
+    background-color: var(--article-bg);
+    padding: 30px;
+    margin: 20px 10px;
+}
+
+.post-date {
+    color: var(--date-color);
+    padding: 10px 0px
+}
+
+.post-content h2 a {
+    color: var(--article-link-color);
+    text-decoration: none;
+}
+
+.post-content h2 a:active {
+    color: var(--article-link-active);
+}
+
+.post-content h2 a:hover {
+    color: var(--article-link-hover);
+    text-decoration: underline;
+}
+
+.post-content figure {
+    text-align: center;
+    margin: 10px;
+}
+
+.post-content figure img {
+    width: 60%;
+    max-width: 300px;
+}
+
+.post-content p {
+    padding: 10px 0px
+}
+
+.post-content p a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.post-content p a:active {
+    color: var(--link-active);
+}
+
+.post-content p a:hover {
+    text-decoration: underline;
+}
+
+/* Large screens responsiveness */
+
+@media only screen and (min-width: 500px) {
+    body div {
+        display: flex;
+    }
+
+    header {
+        flex: 1;
+    }
+
+    main {
+        flex: 4;
+    }
+}

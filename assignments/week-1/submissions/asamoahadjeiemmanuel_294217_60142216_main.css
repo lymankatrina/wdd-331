@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+header {
+    background-color: #6495ED;
+    text-align: right;
+    padding: 3em 8%;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    white-space: nowrap;
+    list-style-type: none;
+}
+li a, h1 a {
+    color: #FAEBD7;
+}
+h1, h2 {
+    font-family: 'Lora', serif; 
+}
+main {
+    background-color: #FAEBD7;
+    padding: 20px 8%;
+}
+figure img {
+    width: 100%;
+    margin: 0 auto;
+}
+article {
+    background-color: white;
+    box-shadow: 2px 2px 3px gray;
+    padding: 2em;
+}
+article p a{
+    color:  #6495ED;
+}
+article p a:active {
+    color: #DEB887;
+}
+
+article:nth-child(2){
+    margin-top: 20px;
+}
+.post-date {
+    color: gray;
+    margin-bottom: -20px;
+    white-space: nowrap;
+}
+
+li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+li a:active{
+    color: #DEB887;
+}
+article a:hover{
+    text-decoration: underline;
+    color: #6495ED;
+}
+article a:active {
+    color: #DEB887;
+}
+
+
+@media only screen and (min-width: 600px){
+    body div{
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+    main {
+        padding: 3em 8%;
+    }
+    figure{
+        width: 28%;
+        margin: 0 auto;
+    }
+    figure img {
+        width: 100%;
+    }
+}

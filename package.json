@@ -1,5 +1,5 @@
 {
-    "name": "test",
+    "name": "wdd-331",
     "version": "0.0.1",
     "license": "MIT",
     "scripts": {
@@ -11,9 +11,12 @@
     },
     "devDependencies": {
         "@rollup/plugin-eslint": "^8.0.1",
+        "@testing-library/dom": "^7.30.4",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-import": "^2.22.1",
         "eslint-plugin-prettier": "^3.4.0",
+        "jest": "^26.6.3",
+        "jsdom": "^16.5.3",
         "prettier": "^2.2.1",
         "sass": "^1.32.11",
         "stylelint": "^13.13.0",

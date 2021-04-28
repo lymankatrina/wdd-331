@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap'); /* Google Font Lora */
+
+/* 
+    Small Screens 
+*/
+h1, h2, h3 {
+    font-family: 'Lora', serif; /* Headlines font */   
+}
+
+body {
+    margin: 0;    
+}
+
+body div {
+    display: grid;
+    grid-template-columns: 1fr; /* For small screens */   
+    font-family: Arial, Helvetica, sans-serif; /* Body font */        
+}
+
+header {
+    padding: 2rem 1rem;
+    background-color: #6495ED; /* Blue color for the menu */
+    text-align: right;
+}
+
+/*
+    Style navigation links
+*/
+header a {
+    color: white;    
+    text-decoration: none;
+}
+header a:visited {    
+    color: #FAEBD7;    
+}
+header a:active {    
+    color: #DEB887;    
+}
+header a:hover {    
+    text-decoration: underline;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    padding-top: 1rem;
+}
+
+main {
+    background-color: #FAEBD7;
+}
+
+/*
+    Style other links
+*/
+a {
+    text-decoration: none;    
+}
+a:visited {
+    color: #6495ED;    
+}
+a:active {
+    color: #DEB887;    
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* 
+    Style for title links
+*/
+.post-content h2 a {
+    color: black; 
+    text-decoration: none;    
+}
+.post-content h2 a:active {
+    color: #DEB887; 
+}
+.post-content h2 a:jov {
+    text-decoration: underline;
+    color: #6495ED; 
+}
+
+/*
+    Style Article
+*/
+article {
+    background-color: white;
+    margin: 3rem 4rem 3rem;
+    padding: 2rem 3rem 2rem;
+}
+
+.post-date {
+    color: gray;
+}
+
+/*
+    Pictures Style
+*/
+img {
+    display: block;
+    margin: auto;  
+    width: 250px;  
+}
+
+/* 
+    Medium Screens 
+*/
+@media only screen and (min-width: 45rem) {
+    body div {
+        grid-template-columns: auto auto; /* For medium and large screens */   
+    }
+
+    header {
+        padding: 3rem 2rem;
+    }
+
+    img {
+        width: 300px;  
+    }
+}
+
+/* 
+    Large Screens 
+*/
+@media only screen and (min-width: 64rem) {
+    img {
+        width: 350px;  
+    }
+}

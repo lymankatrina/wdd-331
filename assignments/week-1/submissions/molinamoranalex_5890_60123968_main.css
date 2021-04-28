@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color:#000;
+    margin: 0px;
+}
+
+/* Container for header and main  */
+div {
+    background-color: #FAEBD7;
+    margin: 0 auto;
+    max-width: 900px;
+    height: 100%;
+}
+
+.post-date {
+    color: gray;
+    background-color: #fff;
+    padding: 10px 0px;
+}
+
+header {
+    position: fixed;
+    text-decoration: none;
+    text-align: right;
+    display: inline-block;
+    padding: 35px 35px;
+    width: 11%;
+    height: 100%;
+    border: 1px solid #6495ED;
+    color: #FAEBD7;
+    background-color:#6495ED;
+}
+
+header h1 {
+    font-family: 'Lora';
+}
+
+header hr {
+    color: #FAEBD7;
+}
+
+header a {
+    color: #FAEBD7;
+    background-color:#6495ED;
+    text-decoration: none;
+    display: block;
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+}
+
+li a {
+    text-decoration: none;
+    text-align: right;
+    display: block;
+    padding: 5px 10px;
+    height: 30px;
+    border: 1px solid #6495ED;
+    color: #FAEBD7;
+    background-color:#6495ED;
+    }
+            
+li a:hover {
+    color:#fff;
+    background-color:#6495ED;
+    text-decoration: underline;
+}             
+
+nav ul.li {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 120px;
+}
+        
+nav li:hover ul {
+    display: block;
+}
+
+main {
+    background-color: #FAEBD7;
+    padding: 35px 0px; 
+    width: 75%;
+    height: 100%;
+    text-decoration: none;
+}
+
+article {
+    position: relative;
+    padding: 35px 35px;
+    margin: 40px 0px 0px 0px;
+    width: 440px;
+    height: 100%;
+    border: 0px;
+    color: #000;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 0px gray;
+    left: 50%;
+}
+
+article a {
+    color: #000;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #6495ED;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 54em) {
+
+    body {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;        
+    }
+
+    div {
+        background-color: #FAEBD7;
+        margin: 0 auto;
+        max-width: 100%;
+        height: 100%;
+    }
+    
+    div header {
+        position: relative;
+        text-decoration: none;
+        text-align: right;
+        display: inline-block;
+        padding: 0px 0px;
+        width: 100%;
+        border: 1px solid #6495ED;
+        color: #FAEBD7;
+        background-color:#6495ED;
+        }
+
+    header h1 {
+        font-family: 'Lora';
+    }
+
+    header hr {
+        color: #FAEBD7;
+        margin: 25px;
+    }
+
+    header a {
+        color: #FAEBD7;
+        background-color:#6495ED;
+        text-decoration: none;
+        display: block;
+    }
+
+    li {
+        list-style-type: none;
+        position: relative;
+    }
+    
+    li a {
+        text-decoration: none;
+        text-align: right;
+        display: block;
+        padding: 5px 35px;
+        height: 30px;
+        border: 1px solid #6495ED;
+        color: #FAEBD7;
+        background-color:#6495ED;
+        }
+                
+    li a:hover {
+        color:#fff;
+        background-color:#6495ED;
+        text-decoration: underline;
+    }             
+    
+    nav ul.li {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 120px;
+    }
+            
+    nav li:hover ul {
+        display: block;
+    }
+
+    h1 a {
+        padding: 0px 35px 0px;
+    }
+    
+    main {
+        background-color: #FAEBD7;
+        padding: 35px 0px; 
+        width: 100%;
+        text-decoration: none;
+    }
+
+    article {
+        position: inherit;
+        padding: 0px 35px 35px;
+        margin: 40px 0px 0px 10px;
+        width: 75%;
+        height: 100%;
+        border: 0px;
+        color: #000;
+        background-color: #ffffff;
+        box-shadow: 3px 3px 0px gray;
+    }
+    
+    article a {
+        color: #000;
+        text-decoration: none;
+    }
+    
+    article a:hover {
+        color: #6495ED;
+        text-decoration: underline;
+    }
+
+    .post-content {
+        display: block;
+    }
+
+    .post-content figure {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
