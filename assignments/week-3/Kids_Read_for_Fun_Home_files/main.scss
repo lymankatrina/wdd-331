@@ -1,0 +1,117 @@
+// variables
+$antique-white: #faebd7;
+$cornflower-blue: #6495ed;
+$black: #000000;
+$burlywood: #deb887;
+$white: #ffffff;
+$headline-font: Lora, serif;
+$block-font: Helvitica, Arial, sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headline-font;
+}
+body {
+    font-family: $block-font;
+    background-color: $black;
+}
+@mixin active-link($color: $burlywood, $text-decoration: none) {
+    color: $burlywood;
+    text-decoration: none;
+}
+header {
+    background-color: $cornflower-blue;
+    text-align: right;
+    padding: 2rem;
+    ul {
+        list-style: none;
+        line-height: 2rem;
+    }
+    a:link,
+    a:visited {
+        color: $antique-white;
+        text-decoration: none;
+    }
+    a:active {
+        @include active-link;
+    }
+    a:hover {
+        color: $white;
+        text-decoration: underline;
+    }
+}
+main {
+    background-color: $antique-white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+p {
+    a:link,
+    a:visited {
+        color: $cornflower-blue;
+        text-decoration: none;
+    }
+    a:active {
+        @include active-link;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+article {
+    text-align: left;
+    margin: 1rem 0.5rem;
+    padding: 2rem;
+    background-color: $white;
+    box-shadow: 5px 5px 5px 1px rgba(44, 44, 51, 0.1);
+    a:link,
+    a:visited {
+        color: $black;
+        text-decoration: none;
+    }
+    a:active {
+        @include active-link($burlywood, underline);
+    }
+    a:hover {
+        color: $cornflower-blue;
+        text-decoration: underline;
+    }
+}
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+h2 {
+    font-size: 2rem;
+}
+.post-date {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+@media screen and (min-width: 43rem) {
+    div {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: auto auto;
+    }
+    header {
+        grid-column: 1;
+        grid-row: 1 / 3;
+    }
+    article {
+        grid-column: 2;
+        grid-row: auto;
+        margin: 2rem 3rem;
+        padding: 3rem;
+    }
+}
