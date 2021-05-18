@@ -82,12 +82,12 @@ xNavigation
 
 -------------------------------- */
 header {
-  background-color: #19191a;
+  background-color: #0a2342;
 }
 
 .cd-logo {
   /* logo box style */
-  background-color: #5f8ee4;
+  background-color: #74acdf;
   width: 120px;
 }
 @media only screen and (min-width: 1024px) {
@@ -98,19 +98,19 @@ header {
 
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
-  background: #19191a;
+  background: #0a2342;
 }
 .cd-main-nav li a {
   color: #ffffff;
-  border-color: #262627;
+  border-color: #0d2f58;
 }
 @media only screen and (min-width: 1024px) {
   .cd-main-nav li a {
-    color: #7d7d82;
+    color: #3783e1;
   }
   .cd-main-nav li a.selected {
     color: #ffffff;
-    box-shadow: 0 2px 0 #5f8ee4;
+    box-shadow: 0 2px 0 #74acdf;
   }
   .cd-main-nav li a:hover {
     color: #ffffff;
@@ -137,19 +137,19 @@ header {
 
 .cd-download {
   /* download button top-right visible on big devices */
-  background-color: #323234;
+  background-color: #113a6e;
 }
 .no-touch .cd-download:hover {
-  background-color: #3f3f41;
+  background-color: #144684;
 }
 .cd-download span {
   /* tooltip */
-  background: #5f8ee4;
+  background: #74acdf;
   color: #ffffff;
 }
 .cd-download span::before {
   /* right arrow color */
-  border-color: #5f8ee4;
+  border-color: #74acdf;
 }
 
 /* -------------------------------- 
@@ -158,7 +158,7 @@ xPage title
 
 -------------------------------- */
 main > h1 {
-  color: #19191a;
+  color: #0a2342;
 }
 @media only screen and (min-width: 1600px) {
   main > h1 {
@@ -174,8 +174,8 @@ xTypography
 -------------------------------- */
 h1,
 h2 {
-  font-family: "Open Sans", sans-serif;
-  color: #19191a;
+  font-family: "Merienda One", cursive;
+  color: #0a2342;
 }
 
 h1 {
@@ -215,10 +215,10 @@ section > h2::before {
 p {
   font-size: 1.4rem;
   line-height: 1.4;
-  color: #58585b;
+  color: #1b5eb1;
 }
 p a {
-  color: #5f8ee4;
+  color: #74acdf;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -238,38 +238,38 @@ xButtons
   box-shadow: none;
   border-radius: 0.25em;
   font-size: 1.4rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Merienda One", cursive;
   color: #ffffff;
   padding: 0.6em 2.2em;
   cursor: pointer;
-  background: #5f8ee4;
+  background: #74acdf;
 }
 .btn:focus {
   outline: none;
 }
 .no-touch .btn:hover {
-  background: #759de8;
+  background: #89b8e4;
 }
 .btn.btn-success {
-  background: #6fce72;
+  background: #5e0b15;
 }
 .no-touch .btn.btn-success:hover {
-  background: #82d485;
+  background: #750e1a;
 }
 .btn.btn-alert {
-  background: #e4655f;
+  background: #fcba04;
 }
 .no-touch .btn.btn-alert:hover {
-  background: #e87a75;
+  background: #fcc11d;
 }
 .btn.btn-outline {
-  color: #5f8ee4;
+  color: #74acdf;
   background: transparent;
-  box-shadow: inset 0 0 0 1px #5f8ee4;
+  box-shadow: inset 0 0 0 1px #74acdf;
 }
 .no-touch .btn.btn-outline:hover {
   color: #ffffff;
-  background: #5f8ee4;
+  background: #74acdf;
 }
 @media only screen and (min-width: 768px) {
   .btn {
@@ -279,7 +279,7 @@ xButtons
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
-  color: #5f8ee4;
+  color: #74acdf;
 }
 
 /* -------------------------------- 
@@ -314,16 +314,16 @@ input[type=text] {
   box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
 }
 input[type=text].success {
-  border-color: #6fce72;
-  box-shadow: 0 0 6px rgba(111, 206, 114, 0.2);
+  border-color: #5e0b15;
+  box-shadow: 0 0 6px rgba(94, 11, 21, 0.2);
 }
 input[type=text].alert {
-  border-color: #e4655f;
-  box-shadow: 0 0 6px rgba(228, 101, 95, 0.2);
+  border-color: #fcba04;
+  box-shadow: 0 0 6px rgba(252, 186, 4, 0.2);
 }
 input[type=text]:focus {
-  border-color: #5f8ee4;
-  box-shadow: 0 0 6px rgba(95, 142, 228, 0.2);
+  border-color: #74acdf;
+  box-shadow: 0 0 6px rgba(116, 172, 223, 0.2);
 }
 
 input[type=radio],
@@ -383,7 +383,7 @@ input[type=checkbox] {
 
 input[type=radio]:checked + label::before,
 input[type=checkbox]:checked + label::before {
-  background-color: #19191a;
+  background-color: #0a2342;
   border: none;
   box-shadow: none;
 }
@@ -445,7 +445,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Merriweather", serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 a {
@@ -457,7 +457,7 @@ img {
 }
 
 input, textarea, select {
-  font-family: "Merriweather", serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.6rem;
 }
 
@@ -894,31 +894,31 @@ section:nth-of-type(10) h2::before {
   padding: 0.6em 0;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
-  background: #5f8ee4;
+  background: #74acdf;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
-  background: #759de8;
+  background: #89b8e4;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::after {
-  background: #497fe0;
+  background: #5fa0da;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch {
-  background: #19191a;
+  background: #0a2342;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch::before {
-  background: #262627;
+  background: #0d2f58;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch::after {
-  background: #0d0d0d;
+  background: #07172c;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
-  background: #e4655f;
+  background: #fcba04;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-  background: #e87a75;
+  background: #fcc11d;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
-  background: #e05049;
+  background: #e4a803;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
   background: #e6e6e6;
@@ -970,7 +970,7 @@ section:nth-of-type(10) h2::before {
 /* xTypography section - basic style */
 .cd-typography h1::before {
   content: "Aa - ";
-  color: #5f8ee4;
+  color: #74acdf;
 }
 
 .cd-buttons .cd-box:first-of-type {
