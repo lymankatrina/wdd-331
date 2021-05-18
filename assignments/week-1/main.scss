@@ -11,4 +11,8 @@
     @include media-breakpoint-up(md) {
         color: purple;
     }
+    @include gradient-x(red, green, 0%, 100%);
+}
+.title {
+    @include button-size(1rem, 1rem, 1.5rem, 15px);
 }
