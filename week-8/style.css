@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1,
+h2 {
+  font-family: "Merienda One", cursive;
+  color: #0a2342; }
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.4em; }
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 3.2rem; } }
+  @media only screen and (min-width: 1024px) {
+    h1 {
+      font-size: 4rem; } }
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0; }
+  @media only screen and (min-width: 768px) {
+    h2 {
+      font-size: 1.8rem;
+      margin: 1em 0 1.4em; } }
+
+section > h2::before {
+  /* number before each section title */
+  color: silver; }
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #1b5eb1; }
+  p a {
+    color: #74acdf;
+    text-decoration: underline; }
+  @media only screen and (min-width: 768px) {
+    p {
+      font-size: 1.6rem;
+      line-height: 1.6; } }
+
+/* -------------------------------- 
+
+xNavigation 
+
+-------------------------------- */
+header {
+  background-color: #0a2342; }
+
+.cd-logo {
+  /* logo box style */
+  background-color: #74acdf;
+  width: 120px; }
+  @media only screen and (min-width: 1024px) {
+    .cd-logo {
+      width: 180px; } }
+
+.cd-main-nav {
+  /* main navigation background color - full screen on small devices */
+  background: #0a2342; }
+  .cd-main-nav li a {
+    color: #ffffff;
+    border-color: #0d2f58; }
+  @media only screen and (min-width: 1024px) {
+    .cd-main-nav li a {
+      color: #3783e1; }
+      .cd-main-nav li a.selected {
+        color: #ffffff;
+        box-shadow: 0 2px 0 #74acdf; }
+      .cd-main-nav li a:hover {
+        color: #ffffff; } }
+
+.cd-nav-trigger span {
+  /* hamburger menu */
+  background-color: #ffffff; }
+  .cd-nav-trigger span::before, .cd-nav-trigger span::after {
+    /* upper and lower lines */
+    background-color: #ffffff; }
+
+.nav-is-visible .cd-nav-trigger span {
+  /* hide line in the center on mobile when nav is visible */
+  background-color: rgba(255, 255, 255, 0); }
+  .nav-is-visible .cd-nav-trigger span::before, .nav-is-visible .cd-nav-trigger span::after {
+    /* preserve visibility of upper and lower lines - close icon */
+    background-color: white; }
+
+.cd-download {
+  /* download button top-right visible on big devices */
+  background-color: #113a6e; }
+  .no-touch .cd-download:hover {
+    background-color: #144684; }
+  .cd-download span {
+    /* tooltip */
+    background: #74acdf;
+    color: #ffffff; }
+    .cd-download span::before {
+      /* right arrow color */
+      border-color: #74acdf; }
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  font-family: "Quicksand", sans-serif;
+  background-color: #0a2342;
+  text-align: center; }
+
+footer a {
+  height: 3rem;
+  padding-top: 1.5rem; }
+
+footer a:link {
+  text-decoration: underline;
+  color: #ffffff; }
+
+footer a:hover {
+  background-color: #113a6e; }
+
+footer a:visited {
+  color: #fcba04; }
+
+footer a.zen-validate-html::before {
+  display: inline-block;
+  content: url("icon-html.svg");
+  height: 2.5rem;
+  width: 2.5rem; }

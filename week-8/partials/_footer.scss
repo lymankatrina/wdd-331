@@ -1,0 +1,35 @@
+// footer //
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    font-family: $primary-font;
+    background-color: $color-2;
+    text-align: center;
+}
+
+footer a {
+    height: 3rem;
+    padding-top: 1.5rem;
+}
+
+footer a:link {
+    text-decoration: underline;
+    color: $color-5;
+}
+
+footer a:hover {
+    background-color: lighten($color-2, 10%);
+}
+
+footer a:visited {
+    color: $color-3;
+}
+footer a::before {
+}
+footer a.zen-validate-html::before {
+    display: inline-block;
+    content: url('icon-html.svg');
+    height: 2.5rem;
+    width: 2.5rem;
+}
