@@ -1,6 +1,6 @@
 @import 'partials/reset';
-@import 'partials/prefix-mixins';
-@import 'partials/layout';
+
+
 
 // responsive grid and media queries
 
@@ -10,11 +10,19 @@
 // fonts
 @import 'partials/fonts';
 
-// typography
-@import 'partials/typography';
+@import 'partials/prefix-mixins';
+@import 'partials/main';
+
+// header
+@import 'partials/header';
 
 // navigation
 @import 'partials/navigation';
 
+// aside
+@import 'partials/aside';
+
 // footer
 @import 'partials/footer';
+
+
