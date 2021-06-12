@@ -40,3 +40,40 @@
     -o-appearance: $option;
     appearance: $option;
 }
+
+//Joe's added mixins
+@mixin title() {
+    background-color: $color-2;
+    color: $color-5;
+    margin: .5rem 0;
+    padding: 1rem;
+    font-family: $secondary-font;
+}
+
+@mixin paragraph() {
+    color: $color-2;
+    line-height: 1.25rem;
+    font-family: $primary-font;
+}
+@mixin links() {
+    text-decoration: none;
+    color: $color-3;
+    font-family: $primary-font;
+
+}
+
+@mixin links-hover() {
+    color: $color-5;
+    border-radius: .5rem;
+    background-color: $color-2;
+    padding: .25rem;
+    
+}
+@mixin links-visited() {
+    color: $success;
+}
+@mixin flag-colors() {
+    background-image: linear-gradient($color-1, $color-1 33.33%,
+    $color-5 33.33%, $color-5 66.67%,
+    $color-1 66.67%);
+}

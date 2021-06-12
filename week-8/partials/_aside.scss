@@ -1,0 +1,15 @@
+.sidebar a {
+    @include links;
+}
+
+.sidebar a:hover {
+    @include links-hover;
+}
+
+.sidebar a:visited {
+    @include links-visited;
+}
+
+.sidebar li {
+    line-height: 1.25rem;
+}
