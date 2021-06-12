@@ -68,7 +68,7 @@
 	padding: 0.25rem;
 }
 @mixin links-visited() {
-	color: lighten($success, 10%);
+	color: lighten($success, 20%);
 }
 @mixin flag-colors() {
 	background-image: linear-gradient(

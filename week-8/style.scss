@@ -1,28 +1,25 @@
-@import 'partials/reset';
-
-
+@import "partials/reset";
+@import "partials/layout";
 
 // responsive grid and media queries
 
 // color palette - these colors will be the color swatches of the Colors section
-@import 'partials/color';
+@import "partials/color";
 
 // fonts
-@import 'partials/fonts';
+@import "partials/fonts";
 
-@import 'partials/prefix-mixins';
-@import 'partials/main';
+@import "partials/prefix-mixins";
+@import "partials/main";
 
 // header
-@import 'partials/header';
+@import "partials/header";
 
 // navigation
-@import 'partials/navigation';
+@import "partials/navigation";
 
 // aside
-@import 'partials/aside';
+@import "partials/aside";
 
 // footer
-@import 'partials/footer';
-
-
+@import "partials/footer";
