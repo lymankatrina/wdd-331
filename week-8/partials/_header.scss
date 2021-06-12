@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 }
+
 .intro header {
 	height: 10rem;
 	@include flag-colors();
@@ -12,7 +13,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 }
-.intro header h1 {
+.intro h1 {
 	font-family: $secondary-font;
 	text-align: left;
 	margin: 0;
@@ -25,4 +26,13 @@
 	padding: 0;
 	font-size: 1rem;
 	text-align: bottom;
+}
+
+.summary {
+	grid-row: 2;
+	grid-column: 2 / 3;
+}
+.preamble {
+	grid-row: 3;
+	grid-column: 1 / 3;
 }

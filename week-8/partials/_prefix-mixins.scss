@@ -79,3 +79,7 @@
 		$color-1 66.67%
 	);
 }
+
+@mixin sidebar() {
+	background-color: lighten($color-2, 20%);
+}
