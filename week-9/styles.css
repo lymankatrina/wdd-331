@@ -1046,20 +1046,10 @@ img {
 
 .search-submit {
   background-color: green;
+  color: white;
   padding: 0.25rem;
   border-radius: 0 5px 5px 0;
   border: 1px solid #b4b3b5;
-}
-
-.site-banner {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: (auto)[2];
-      grid-template-rows: repeat(2, auto);
-  grid-gap: 0.5rem;
-  padding: 1rem;
 }
 
 .icon-byui-logo {
@@ -1067,8 +1057,7 @@ img {
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  grid-row: 2;
 }
 
 .icon-search {
@@ -1076,8 +1065,7 @@ img {
   -ms-grid-column-span: 1;
   grid-column: 3 / 4;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  grid-row: 2;
 }
 
 .icon-audience {
@@ -1085,8 +1073,7 @@ img {
   -ms-grid-column-span: 1;
   grid-column: 4 / 5;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  grid-row: 2;
 }
 
 .icon-menu {
@@ -1094,25 +1081,6 @@ img {
   -ms-grid-column-span: 1;
   grid-column: 5 / 6;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
-}
-
-header form {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1 / 6;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-}
-
-.icon-magnifying-glass {
-  background: green;
-  padding: 0.5rem;
-  color: white;
-  border-radius: 0 5px 5px 0;
+  grid-row: 2;
 }
 /*# sourceMappingURL=styles.css.map */
