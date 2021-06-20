@@ -1,0 +1,19 @@
+.search-form {
+	background-color: $body-font;
+	padding: 0.25rem;
+}
+.search-label {
+	background-color: white;
+	border-radius: 5px 0 0 5px;
+	padding: 0.25rem;
+	border: 1px solid $med-gray;
+}
+.search-submit {
+	background-color: green;
+	padding: 0.25rem;
+	border-radius: 0 5px 5px 0;
+	border: 1px solid $med-gray;
+}
+.icon-magnifying-glass {
+	color: white;
+}
