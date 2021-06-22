@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+    {
+      "type": "npm",
+      "script": "install",
+      "path": "WDD-331__W05-Style-Guide/",
+      "problemMatcher": [],
+      "label": "npm: install - WDD-331__W05-Style-Guide",
+      "detail": "install dependencies from package"
+    }
+  ]
+}
