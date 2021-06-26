@@ -1,0 +1,79 @@
+.interest-box {
+	display: grid;
+	grid-template-rows: auto;
+	align-content: center;
+	margin: 15px;
+	grid-gap: 30px;
+}
+.interest-box--banner {
+	grid-row: 1;
+	background-color: $body-font;
+	color: white;
+	padding: 20px;
+	margin-top: 15px;
+}
+.interest-box--banner h2 {
+	margin: 0;
+	font-family: "BYUI Open Sans", "Open Sans", "Lucida Sans Unicode",
+		"Lucida Grande", Verdana, sans-serif;
+	letter-spacing: 0;
+	line-height: 28px;
+	text-align: center;
+	align-content: center;
+	width: 100%;
+	font-weight: 100;
+	font-size: 24px;
+	padding: 6px;
+}
+.interest-box--student-focussed {
+	grid-row: 2;
+	padding: 20px;
+}
+.interest-box--videos {
+	display: inherit;
+	grid-row: 3;
+}
+.interest-box--photos {
+	display: inherit;
+	grid-row: 4;
+	align-content: stretch;
+}
+.interest-box--explore {
+	display: inherit;
+	grid-row: 5;
+	align-content: stretch;
+}
+.interest-box__fig {
+	display: inherit;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+	grid-template-columns: 90% 10%;
+	grid-template-rows: auto;
+	align-content: center;
+	max-width: 100%;
+}
+.interest-box__fig img {
+	grid-row: 1;
+	grid-column: 1 / 3;
+}
+.interest-box__caption {
+	display: inherit;
+	color: $byui-blue;
+	font-family: "BYUI Open Sans", "Open Sans", "Lucida Sans Unicode",
+		"Lucida Grande", Verdana, sans-serif;
+	font-weight: 400;
+	background-color: white;
+	font-size: 15px;
+	font-style: normal;
+	margin: 0 !important;
+	border: 1px solid $dark-gray;
+	padding: 6px 12px;
+	grid-column: 1 / 3;
+}
+.interest-box__icon {
+	grid-column: 2 / 3;
+	justify-self: flex-end;
+	align-self: center;
+}

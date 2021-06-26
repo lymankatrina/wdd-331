@@ -1,0 +1,152 @@
+.links-list {
+	margin: 15px;
+	grid-gap: 30px;
+}
+.audience {
+	display: grid;
+	grid-template-columns: 90% 10%;
+	grid-template-rows: auto;
+	padding-top: 20px;
+}
+.audience__button {
+	display: inherit;
+	grid-column: 1 / 3;
+}
+.audience-dropdown-icon {
+	grid-column: 2 / 3;
+}
+.audience__dropdown {
+	grid-column: 1 / 3;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	z-index: 100;
+	box-shadow: 0 6px 12px rgb(0 0 0 / 50%);
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	list-style: none;
+}
+.audience__dropdown li {
+	line-height: 24px;
+	margin: 0;
+	list-style: none;
+	font-size: 15px;
+	font-style: normal;
+	padding: 10px 24px;
+	border: 1px solid $med-gray;
+}
+.audience__dropdown li a {
+	text-decoration: none;
+}
+.resources {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto;
+	margin: 30px 0;
+	font-family: "BYUI Open Sans", "Open Sans", "Lucida Sans Unicode",
+		"Lucida Grande", Verdana, sans-serif;
+}
+.links-list__heading--gray {
+	border: 1px solid $dark-gray;
+	background-color: $dark-gray;
+	font-size: 22px;
+	margin: 0;
+	padding: 10px 20px;
+	color: white;
+	grid-column: 1 / 3;
+	grid-row: 1;
+	font-weight: normal;
+}
+.links-list__link {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 90% 10%;
+	color: $byui-blue;
+	font-weight: 400;
+	background-color: white;
+	font-size: 15px;
+	font-style: normal;
+	margin: 0 !important;
+	border: 1px solid $dark-gray;
+	padding: 6px 12px;
+	text-decoration: none;
+	text-align: justify;
+}
+.dates {
+	margin: 30px 0;
+}
+.links-list__heading--blue {
+	border: 1px solid $byui-blue;
+	background-color: $byui-blue;
+	font-size: 22px;
+	margin: 0;
+	padding: 10px 20px;
+	color: white;
+	grid-column: 1 / 4;
+	grid-row: 1;
+	font-weight: normal;
+}
+.dates-list__link {
+	display: grid;
+	grid-template-columns: 20% 10% 70%;
+	grid-template-rows: auto;
+	font-family: "BYUI Open Sans", "Open Sans", "Lucida Sans Unicode",
+		"Lucida Grande", Verdana, sans-serif;
+	color: $body-font;
+	font-weight: 400;
+	background-color: white;
+	font-size: 13px;
+	font-style: normal;
+	margin: 0 !important;
+	border: 1px solid $med-gray;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	padding: 6px 12px;
+	text-decoration: none;
+	text-align: justify;
+}
+.dates--date-1 {
+	grid-column: 1 / 2;
+	grid-row: 2;
+	font-weight: bold;
+}
+.dates--desc-1 {
+	grid-column: 3 / 4;
+	grid-row: 2;
+}
+.dates--date-2 {
+	grid-column: 1 / 2;
+	grid-row: 2;
+	font-weight: bold;
+}
+.dates--desc-2 {
+	grid-column: 3 / 4;
+	grid-row: 2;
+}
+.dates--date-3 {
+	grid-column: 1 / 2;
+	grid-row: 2;
+	font-weight: bold;
+}
+.dates--desc-3 {
+	grid-column: 3 / 4;
+	grid-row: 2;
+}
+.dates--date-4 {
+	grid-column: 1 / 2;
+	grid-row: 2;
+	font-weight: bold;
+}
+.dates--desc-4 {
+	grid-column: 3 / 4;
+	grid-row: 2;
+}
+.dates--date-4 {
+	grid-column: 1 / 2;
+	grid-row: 2;
+	font-weight: bold;
+}
+.dates--desc-5 {
+}

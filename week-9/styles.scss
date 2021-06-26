@@ -4,14 +4,22 @@
 $sm-break: 48em;
 
 @import "partials/colors";
-
+@import "partials/buttons";
 // Utility classes
-*,
-	*: before, *: after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+// *,
+// 	*: before, *: after {
+// 	-webkit-box-sizing: border-box;
+// 	-moz-box-sizing: border-box;
+// 	box-sizing: border-box;
+// }
+
+body {
+	margin: 0;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
 }
+
 img {
 	max-width: 100%;
 }
@@ -27,3 +35,6 @@ img {
 }
 @import "partials/navigation";
 @import "partials/form";
+@import "partials/interestbox";
+@import "partials/linkslist";
+@import "partials/newsroom";

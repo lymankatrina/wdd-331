@@ -1,0 +1,22 @@
+.btn--blue {
+	display: inherit;
+	margin: auto;
+	align-content: center;
+	background-color: $byui-blue;
+	color: white;
+	font-size: 15px;
+	font-weight: 700;
+	border-radius: 4px;
+	padding: 6px 24px;
+	border: 1px solid transparent;
+}
+.btn--gray {
+	border: 1px solid $dark-gray;
+	background-color: $light-gray;
+	color: black;
+	padding: 10px 18px;
+	font-weight: 700;
+	font-size: 15px;
+	border-radius: 4px;
+	margin: 0;
+}
