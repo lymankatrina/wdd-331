@@ -6294,6 +6294,81 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+.zen-validate-html {
+  visibility: hidden;
+}
+
+.zen-validate-html::after {
+  visibility: visible;
+  font-family: "Font Awesome 5 Brands";
+  content: "";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.zen-validate-css {
+  visibility: hidden;
+}
+
+.zen-validate-css::after {
+  visibility: visible;
+  font-family: "Font Awesome 5 Brands";
+  content: "";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.zen-license {
+  visibility: hidden;
+}
+
+.zen-license::after {
+  visibility: visible;
+  font-family: "Font Awesome 5 Brands";
+  content: "";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.zen-accessibility {
+  visibility: hidden;
+}
+
+.zen-accessibility::after {
+  visibility: visible;
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.zen-github {
+  visibility: hidden;
+}
+
+.zen-github::after {
+  visibility: visible;
+  font-family: "Font Awesome 5 Brands";
+  content: "";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
 body {
   margin: 0;
   padding: 0.5rem;
