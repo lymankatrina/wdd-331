@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: .5rem;
+}
+section {
+    margin: 0;
+    padding: 0;
+}
+
+body h3 {
+    @include title();
+}
+
+body p {
+    @include paragraph();
+
+}
