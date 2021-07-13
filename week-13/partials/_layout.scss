@@ -16,10 +16,6 @@
 		grid-column: 2 / 3;
 		grid-row: 2;
 	}
-	.sidebar {
-		@include sidebar;
-	}
-
 	.intro {
 		margin: 0;
 		padding: 0;

@@ -6,8 +6,12 @@
 @import "partials/color";
 
 // fonts
+@import "scss/fontawesome.scss";
+@import "scss/solid.scss";
+@import "scss/brands.scss";
 @import "partials/fonts";
 
+@import "partials/icons";
 @import "partials/prefix-mixins";
 @import "partials/main";
 
