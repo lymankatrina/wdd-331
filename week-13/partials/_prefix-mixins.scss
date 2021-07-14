@@ -1,85 +1,87 @@
 @mixin box-sizing($type) {
-	-webkit-box-sizing: $type;
-	-moz-box-sizing: $type;
-	box-sizing: $type;
+    -webkit-box-sizing: $type;
+    -moz-box-sizing: $type;
+    box-sizing: $type;
 }
 
 @mixin clearfix {
-	&::after {
-		clear: both;
-		content: "";
-		display: block;
-	}
+    &::after {
+        clear: both;
+        content: "";
+        display: block;
+    }
 }
 
 @mixin transform($options) {
-	-webkit-transform: $options;
-	-moz-transform: $options;
-	-ms-transform: $options;
-	-o-transform: $options;
-	transform: $options;
+    -webkit-transform: $options;
+    -moz-transform: $options;
+    -ms-transform: $options;
+    -o-transform: $options;
+    transform: $options;
 }
 
 @mixin transition($options) {
-	-webkit-transition: $options;
-	-moz-transition: $options;
-	transition: $options;
+    -webkit-transition: $options;
+    -moz-transition: $options;
+    transition: $options;
 }
 
 @mixin user-select($options) {
-	-webkit-user-select: $options;
-	-moz-user-select: $options;
-	-ms-user-select: $options;
-	user-select: $options;
+    -webkit-user-select: $options;
+    -moz-user-select: $options;
+    -ms-user-select: $options;
+    user-select: $options;
 }
 
 @mixin appearance($option) {
-	-webkit-appearance: $option;
-	-moz-appearance: $option;
-	-ms-appearance: $option;
-	-o-appearance: $option;
-	appearance: $option;
+    -webkit-appearance: $option;
+    -moz-appearance: $option;
+    -ms-appearance: $option;
+    -o-appearance: $option;
+    appearance: $option;
 }
 
 //Joe's added mixins
 @mixin title() {
-	background-color: $color-2;
-	color: $color-5;
-	margin: 0.5rem 0;
-	padding: 1rem;
-	font-family: $secondary-font;
+    background-color: $color-2;
+    color: $color-5;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    font-family: $secondary-font;
 }
 
 @mixin paragraph() {
-	color: $color-2;
-	line-height: 1.25rem;
-	font-family: $primary-font;
+    color: $color-2;
+    font-size: 14px;
+    line-height: 1.25rem;
+    font-family: $primary-font;
 }
+
 @mixin links() {
-	text-decoration: none;
-	color: darken($color-3, 10%);
-	font-family: $primary-font;
+    text-decoration: none;
+    color: darken($color-3, 10%);
+    font-family: $primary-font;
 }
 
 @mixin links-hover() {
-	color: $color-5;
-	border-radius: 0.5rem;
-	background-color: $color-2;
-	padding: 0.25rem;
+    color: $color-5;
+    border-radius: 0.5rem;
+    background-color: $color-2;
+    padding: 0.25rem;
 }
+
 @mixin links-visited() {
-	color: lighten($success, 20%);
+    color: lighten($success, 20%);
 }
+
 @mixin flag-colors() {
-	background-image: linear-gradient(
-		$color-1,
-		$color-1 33.33%,
-		$color-5 33.33%,
-		$color-5 66.67%,
-		$color-1 66.67%
-	);
+    background-image: linear-gradient($color-1,
+            $color-1 33.33%,
+            $color-5 33.33%,
+            $color-5 66.67%,
+            $color-1 66.67%);
 }
 
 @mixin sidebar() {
-	background-color: lighten($color-2, 20%);
+    background-color: lighten($color-2, 20%);
 }

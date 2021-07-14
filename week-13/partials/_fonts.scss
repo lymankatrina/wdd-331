@@ -1,5 +1,11 @@
+@import "scss/fontawesome.scss";
+@import "scss/solid.scss";
+@import "scss/brands.scss";
+
 @import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 // fonts
-$primary-font: "Quicksand", sans-serif;
-$secondary-font: "Merienda One", cursive;
+$primary-font: "Quicksand",
+sans-serif;
+$secondary-font: "Merienda One",
+cursive;

@@ -136,52 +136,6 @@ table {
   border-spacing: 0;
 }
 
-@media only screen and (min-width: 64rem) {
-  .page-wrapper {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: auto;
-  }
-
-  .intro {
-    grid-column: 1/3;
-    grid-row: 1;
-  }
-
-  .main {
-    grid-column: 1/2;
-  }
-
-  .sidebar {
-    grid-column: 2/3;
-    grid-row: 2;
-  }
-
-  .intro {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: auto;
-  }
-
-  .intro h1,
-h2 {
-    font-size: 2rem;
-  }
-
-  .intro::before {
-    content: "";
-    margin-left: 5rem;
-    grid-column: 1/2;
-    grid-row: 1/3;
-    height: 100%;
-    background-size: 55%;
-    background-image: url(llamma2.svg);
-    background-repeat: no-repeat;
-  }
-}
 /*!
  * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -307,22 +261,11 @@ h2 {
 }
 
 .fa-spin {
-  -webkit-animation: fa-spin 2s infinite linear;
-          animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
 }
 
 .fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
-          animation: fa-spin 1s infinite steps(8);
-}
-
-@-webkit-keyframes fa-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  animation: fa-spin 1s infinite steps(8);
 }
 
 @keyframes fa-spin {
@@ -6370,8 +6313,16 @@ readers do not read off random characters that represent icons */
 }
 
 body {
+  background-color: none;
+}
+
+p {
+  padding: 0.25rem 0.5rem;
+}
+
+body {
   margin: 0;
-  padding: 0.5rem;
+  padding: 0;
 }
 
 section {
@@ -6389,42 +6340,62 @@ body h3 {
 
 body p {
   color: #0a2342;
+  font-size: 14px;
   line-height: 1.25rem;
   font-family: "Quicksand", sans-serif;
 }
 
 .intro {
-  margin: 0;
-  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(1fr, 1fr);
+  grid-template-columns: 100%;
 }
 
-.intro header {
-  height: 10rem;
-  background-image: linear-gradient(#74acdf, #74acdf 33.33%, #ffffff 33.33%, #ffffff 66.67%, #74acdf 66.67%);
-  color: #fdd669;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+header {
+  height: 100%;
+  display: grid;
+  grid-gap: 0;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 100%;
+  color: #fcba04;
+  text-shadow: 0.4px 0.2px #ffffff;
 }
 
-.intro h1 {
+header h1 {
+  grid-row: 1/2;
+  background-color: #74acdf;
+  padding-top: 1rem;
+  padding-left: 1rem;
   font-family: "Merienda One", cursive;
   text-align: left;
-  margin: 0;
+  font-size: 1.8rem;
+  height: 3rem;
+  width: auto;
 }
 
-.intro header h2 {
+header::after {
+  grid-row: 2/3;
+  content: "";
+  background-image: url(sun.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+header h2 {
+  grid-row: 3/4;
+  background-color: #74acdf;
+  padding-top: 1rem;
+  padding-right: 1rem;
   font-family: "Merienda One", cursive;
-  text-align: right;
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  width: auto;
+  text-align: end;
 }
 
 .summary {
   grid-row: 2;
-  grid-column: 2/3;
+  grid-column: 1;
 }
 
 .preamble {
@@ -6491,4 +6462,82 @@ footer a:hover {
 
 footer a:visited {
   color: #fcba04;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media only screen and (min-width: 26rem) {
+  .page-wrapper {
+    max-width: 980px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: auto;
+  }
+
+  .page-wrapper::after {
+    background-color: #0a2342;
+    content: "";
+    grid-column: 2/3;
+    grid-row: 1;
+    border: 1rem solid #0a2342;
+    width: auto;
+    height: auto;
+    background-size: 100%;
+    background-image: url(llamma2.svg);
+    background-position: top;
+    background-repeat: repeat;
+    transform: rotateY(180deg);
+  }
+
+  .intro {
+    grid-column: 1/2;
+  }
+
+  .intro header {
+    display: grid;
+    grid-column-gap: 0.5rem;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  header::before {
+    background-image: none;
+  }
+
+  header h1 {
+    grid-column: 1/3;
+  }
+
+  header::after {
+    grid-column: 1/3;
+    margin-left: 0.5rem;
+    background-size: auto;
+    background-position: center;
+  }
+
+  header h2 {
+    grid-column: 1/3;
+  }
+
+  .summary {
+    grid-row: 2;
+    grid-column: 1/3;
+  }
+
+  .preamble {
+    grid-row: 3;
+    grid-column: 1/3;
+  }
+
+  .main {
+    grid-column: 1/2;
+    grid-row: 2;
+  }
+
+  .sidebar {
+    grid-column: 2/3;
+    grid-row: 2;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

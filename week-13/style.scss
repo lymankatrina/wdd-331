@@ -1,18 +1,19 @@
 @import "partials/reset";
-@import "partials/layout";
-// responsive grid and media queries
 
 // color palette - these colors will be the color swatches of the Colors section
 @import "partials/color";
 
 // fonts
-@import "scss/fontawesome.scss";
-@import "scss/solid.scss";
-@import "scss/brands.scss";
 @import "partials/fonts";
-
 @import "partials/icons";
+
+// mixins
 @import "partials/prefix-mixins";
+
+// basic-elements
+@import "partials/basic-elements";
+
+// main
 @import "partials/main";
 
 // header
@@ -26,3 +27,6 @@
 
 // footer
 @import "partials/footer";
+
+// responsive grid and media queries
+@import "partials/layout";
